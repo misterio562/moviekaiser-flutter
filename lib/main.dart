@@ -5,23 +5,7 @@ import 'package:fluttermovie/google_sign_in_firebase/home_google_sign_in.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'MovieKaiser',
-      theme: ThemeData(
-        primarySwatch: Colors.blueGrey
-      ),
-      home: HomeGoogleSingIn(),
-    );
-  }
+  runApp(const HomeGoogleSingIn());
 }
 
 class _Home extends StatelessWidget {
@@ -47,6 +31,31 @@ class _Home extends StatelessWidget {
             },
           )
         ],
+      ),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            DrawerHeader(
+              child: Text('Menú'),
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
+            ),
+            ListTile(
+              title: Text('Opción 1'),
+              onTap: () {
+                // acción al hacer clic en la opción 1
+              },
+            ),
+            ListTile(
+              title: Text('Opción 2'),
+              onTap: () {
+                // acción al hacer clic en la opción 2
+              },
+            ),
+          ],
+        ),
       ),
     );
   }
