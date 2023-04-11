@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "728860238237",
+    "project_id": "movikaiser",
+    "storage_bucket": "movikaiser.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728860238237:android:fa3276913dea5230c9cf74",
+        "android_client_info": {
+          "package_name": "com.example.fluttermovie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728860238237-vi7nu3cvllc90ggsmkmv8q2v1vi993dv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7miLbp8lAPNDTnogsubieWgUPSMyH1Ak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728860238237-vi7nu3cvllc90ggsmkmv8q2v1vi993dv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
